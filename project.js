@@ -13,16 +13,6 @@ const projectSchema = {
     required: ["owner", "title", "description", "createdAtt"],
     additionalProperties: false
 }
-/* 
-const schema = {
-  type: "object",
-  properties: {
-    foo: {type: "integer"},
-    bar: {type: "string"}
-  },
-  required: ["foo"],
-  additionalProperties: false
-} */
 
 const validate = ajv.compile(projectSchema)
 
