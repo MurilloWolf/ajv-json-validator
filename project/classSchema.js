@@ -16,11 +16,11 @@ const modificatorsSchema = {
     type:"object",
     properties: {
         pattern:{
-            type:"array",
+            type:["array","null"],
             uniqueItems: true,
             additionalItems: false,
             items:[
-                {enum:["none","observer"]}
+                {enum:["observer"]}
             ],
             minItems: 1,
             maxItems: 3
@@ -67,7 +67,7 @@ const data = {
     },
     modificator:{
         description:"A simple modificator exemple",
-        pattern: ["observer"],
+        pattern: null,
         type: ["abstract"]
     }
 }
