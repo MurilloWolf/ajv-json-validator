@@ -1,7 +1,7 @@
 const modificators = [
-    "abstract",
-    "interface",
-    "static",
-]
+  'abstract',
+  'interface',
+  'static',
+];
 
 export default modificators;

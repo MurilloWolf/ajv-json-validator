@@ -1,13 +1,27 @@
-const attributesSchema = {
-    type:"object",
-    properties: {
-        name:{type:"string",}, 
-        type:{type:"string",}, 
-        permission:{type:"string",}, 
-        description:{type:"string",}, 
-    },
-    required: ["name","permission", "description", "type"],
-    additionalProperties: false
-}
+const primitiveTypes = [
+    "integer",
+    "boolean",
+    "string",
+    "double",
 
-export default attributesSchema;
+]
+
+const primitivePermissions = [
+    "public",
+    "protect",
+    "private"
+]
+
+const attributesSchema = {
+  type: 'object',
+  properties: {
+    name: { type: 'string' },
+    type: { enum: primitiveTypes },
+    permission: { enum: primitivePermissions },
+    description: { type: 'string' },
+  },
+  required: ['name', 'permission', 'description', 'type'],
+  additionalProperties: false,
+};
+
+module.exports = attributesSchema;

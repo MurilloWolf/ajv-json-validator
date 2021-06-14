@@ -9,4 +9,4 @@ const patterns = [
     "strategy"
 ]
 
-export default patterns;
+module.exports = patterns;

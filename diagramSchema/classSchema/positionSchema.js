@@ -10,4 +10,4 @@ const positionSchema = {
     additionalProperties: false
 }
 
-export default positionSchema;
+module.exports = positionSchema;
