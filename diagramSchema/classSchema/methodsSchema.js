@@ -1,3 +1,5 @@
+const permissionTypes = require('../permissions')
+
 const paramsMethods = {
     type:"object",
     properties: {
@@ -12,17 +14,15 @@ const methodsSchema = {
     properties: {
         name:{type:"string",}, 
         returnType:{type:"string",}, 
-        permission:{type:"string",}, 
+        permission:{enum: permissionTypes}, 
         description:{type:"string",}, 
         params:{
             type:["array","null"],
-            properties: {
-                items: paramsMethods
-            }
+            items: paramsMethods
         }
     },
-    required: ["name","permission", "description", "returnType"],
+    required: ["name","permission", "description", "returnType","params"],
     additionalProperties: false
 }
 
-export default methodsSchema;
+module.exports = methodsSchema;
