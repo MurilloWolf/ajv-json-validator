@@ -10,8 +10,7 @@ describe("Verificar o attributeSchem", ()=>{
 
    
     test.each(dataValid)(`Verifica se o array schema methods é valido:
-       {name:$name, returnType:$returnType, permission:$permission}, description:$description`, (data)=>{
-        console.table(data.params)
+       {id:$classId, type:$type, tag:$tag, read:$read, navigation:$navigation}`, (data)=>{
         const isValid = validate(data)
         expect(isValid).toBeTruthy();
     })

@@ -24,15 +24,12 @@ const dataValid = [
             name:"rua",
             type:"string"
         },{
-
             name:"bairro",
             type:"string"
         },{
-
             name:"cidade",
             type:"string"
-        }  
-        ]
+        }]
     },
     {
         name:'add',
@@ -45,7 +42,6 @@ const dataValid = [
 
 const dataError =[
     {
-      
         returnType: 'string',
         permission: 'public',
         description: '',
@@ -53,7 +49,6 @@ const dataError =[
     },
     {
          name:'setName',
-        
          permission: 'public',
          description: 'retorna o nome da classe',
          params: [{

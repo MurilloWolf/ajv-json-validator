@@ -1,10 +1,10 @@
-const occurrenciesTypesMax = ["1", "*"]
-const occurrenciesTypesMin = ["1", "0"]
-const occurrencies = {
+const occurencesTypesMax = ["1", "*"]
+const occurencesTypesMin = ["1", "0"]
+const occurencesType = {
     type:"object",
     properties:{
-        min:{enum:occurrenciesTypesMin},
-        max:{enum:occurrenciesTypesMax},
+        min:{enum:occurencesTypesMin},
+        max:{enum:occurencesTypesMax},
     },
     required:["min","max"],
     additionalProperties: false
@@ -18,9 +18,9 @@ const associationsSchema = {
         tag:{type:"string"},
         read:{type:"boolean"},
         navigation:{type:"boolean"},
-        occurrencies: occurrencies
+        occurences:occurencesType
     },
-    required:["type","classId","tag","read","navigation","ocurrencies"],
+    required:["type","classId","tag","read","navigation","occurences"],
     additionalProperties: false
 }
 module.exports = associationsSchema;

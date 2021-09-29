@@ -5,10 +5,11 @@ const dataValid = [
         tag:'possui',
         read:true,
         navigation:true,
-        occurrencies: {
+        occurences: {
             min:'1',
             max:'*'
         }
+    
     },
     {
         type:'mey tipo',
@@ -16,7 +17,7 @@ const dataValid = [
         tag:'possui',
         read:false,
         navigation:true,
-        occurrencies: {
+        occurences: {
             min:'1',
             max:'*'
         }
@@ -27,7 +28,7 @@ const dataValid = [
         tag:'possui',
         read:true,
         navigation:false,
-        occurrencies: {
+        occurences: {
             min:'1',
             max:'*'
         }
@@ -38,7 +39,7 @@ const dataValid = [
         tag:'possui',
         read:false,
         navigation:false,
-        occurrencies: {
+        occurences: {
             min:'1',
             max:'*'
         }
@@ -49,7 +50,7 @@ const dataValid = [
         tag:'possui',
         read:false,
         navigation:false,
-        occurrencies: {
+        occurences: {
             min:'0',
             max:'*'
         }
@@ -60,7 +61,7 @@ const dataValid = [
         tag:'possui',
         read:false,
         navigation:false,
-        occurrencies: {
+        occurences: {
             min:'1',
             max:'*'
         }
